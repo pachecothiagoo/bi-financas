@@ -72,6 +72,9 @@ button:disabled { opacity: .55; cursor: not-allowed; }
 .auth-story { min-height: 100dvh; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(28px, 5vw, 72px); border-right: 1px solid #20283a; background: linear-gradient(145deg, #10172aee, #0d1320bb); }
 .brand-lockup { display: flex; align-items: center; gap: 12px; }
 .brand-mark { width: 42px; height: 42px; flex: none; border-radius: 14px; display: grid; place-items: center; background: linear-gradient(135deg,#4f46e5,#3b82f6); color: white; font-size: 16px; font-weight: 800; box-shadow: 0 8px 25px #4f46f533; }
+.brand-logo { width: 48px; height: 48px; flex: none; border-radius: 12px; object-fit: contain; background: #02081c; box-shadow: 0 8px 25px #0005; }
+.auth-mobile-brand { display: none; }
+.topbar-mobile-logo { display: none; }
 .brand-lockup strong { display: block; color: #f5f6ff; font-size: 14px; letter-spacing: -.3px; }
 .brand-lockup small { display: block; margin-top: 4px; color: #8793a9; font-size: 10px; }
 .auth-story-copy { max-width: 600px; margin: 60px 0; }
@@ -314,8 +317,9 @@ button:disabled { opacity: .55; cursor: not-allowed; }
   .finance-app.menu-open .sidebar-scrim { position: fixed; z-index: 45; inset: 0; display: block; border: 0; background: #03050ab8; backdrop-filter: blur(2px); }
   .main-content { width: 100%; margin: 0; padding: calc(14px + env(safe-area-inset-top)) 15px calc(24px + env(safe-area-inset-bottom)); }
   .mobile-menu-button { display: grid; flex: none; }
+  .topbar-mobile-logo { display: block; width: 38px; height: 38px; border-radius: 10px; }
   .topbar { align-items: flex-start; gap: 11px; }
-  .top-title-wrap { align-items: center; }
+  .top-title-wrap { align-items: center; gap: 9px; }
   .topbar h1 { font-size: 20px; }
   .account-chip { max-width: 190px; }
   .recon-layout { grid-template-columns: 1fr; }
@@ -402,6 +406,8 @@ button:disabled { opacity: .55; cursor: not-allowed; }
   .auth-story { display: none; }
   .auth-panel-wrap { min-height: 100dvh; padding: 18px 12px; }
   .auth-panel { width: min(100%,440px); padding: 22px 18px; }
+  .auth-mobile-brand { display: flex; align-items: center; gap: 11px; margin-bottom: 18px; color: #f5f6ff; font-size: 13px; }
+  .auth-mobile-brand .brand-logo { width: 44px; height: 44px; }
   .auth-panel h2 { font-size: 23px; }
   .auth-footer { margin-top: 13px; }
   .dialog-card { width: 100%; max-height: calc(100dvh - 20px); padding: 15px; border-radius: 15px; }

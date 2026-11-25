@@ -10,11 +10,11 @@ export default function Home() {
   });
 
   if (auth.isLoading) {
-    return <main className="loading-screen"><span className="brand-mark">BI</span><LoaderCircle className="spin" size={20} /><span>Validando sua conta…</span></main>;
+    return <main className="loading-screen"><img className="brand-logo" src="/brand/financas-bi-logo.png" alt="Finanças BI" /><LoaderCircle className="spin" size={20} /><span>Validando sua conta…</span></main>;
   }
 
   if (auth.error) {
-    return <main className="loading-screen"><span className="brand-mark">BI</span><p>Não foi possível validar sua sessão.</p><button className="button button-primary" onClick={() => auth.refetch()}>Tentar novamente</button></main>;
+    return <main className="loading-screen"><img className="brand-logo" src="/brand/financas-bi-logo.png" alt="Finanças BI" /><p>Não foi possível validar sua sessão.</p><button className="button button-primary" onClick={() => auth.refetch()}>Tentar novamente</button></main>;
   }
 
   if (!auth.data) {

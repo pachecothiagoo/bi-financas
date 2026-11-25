@@ -45,7 +45,7 @@ export default function AuthScreen({ onAuthenticated }: { onAuthenticated: () =>
     <main className="auth-shell">
       <section className="auth-story">
         <div className="brand-lockup">
-          <span className="brand-mark">BI</span>
+          <img className="brand-logo" src="/brand/financas-bi-logo.png" alt="" />
           <span><strong>Finanças BI</strong><small>Seu dinheiro, com clareza.</small></span>
         </div>
         <div className="auth-story-copy">
@@ -62,6 +62,7 @@ export default function AuthScreen({ onAuthenticated }: { onAuthenticated: () =>
 
       <section className="auth-panel-wrap">
         <div className="auth-panel">
+          <div className="auth-mobile-brand"><img className="brand-logo" src="/brand/financas-bi-logo.png" alt="" /><strong>Finanças BI</strong></div>
           <div className="auth-panel-top"><span className="auth-step">CONTA FINANCEIRA</span><span className="secure-pill"><i /> Conexão segura</span></div>
           <h2>{mode === "login" ? "Bom ter você de volta" : "Crie sua conta"}</h2>
           <p className="auth-subtitle">{mode === "login" ? "Entre para abrir seu painel financeiro." : "Use o mesmo e-mail sempre que quiser acessar seus dados."}</p>

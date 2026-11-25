@@ -43,3 +43,9 @@
 
 - [ ] **Revisão independente de implementação complexa**
   - Um agente de leitura verifica se a autenticação, o isolamento de dados, a persistência, o fluxo de importação/conciliação e o Preview correspondem aos critérios deste TODO e ao Blueprint, sem modificar arquivos.
+
+
+- [ ] **Identidade visual e ícones instaláveis**
+  - Usar a logo fornecida pelo usuário na identificação visual superior do app, incluindo autenticação e dashboard.
+  - Disponibilizar favicon e manifesto PWA com ícones adequados para instalação/adicionar à tela inicial em iOS e Android, mantendo os arquivos no projeto e respeitando o uso em tamanhos e formatos móveis.
+  - Manter a publicação separada; a instalação permanente só fica disponível após publicação em HTTPS estável.

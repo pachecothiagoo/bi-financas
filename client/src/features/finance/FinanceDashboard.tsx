@@ -330,7 +330,7 @@ export default function FinanceDashboard({ user }: { user: AuthUser }) {
 
   return <div className={`finance-app ${menuOpen ? "menu-open" : ""}`}>
     <aside className="sidebar">
-      <div className="brand-lockup"><span className="brand-mark">BI</span><span><strong>Finanças BI</strong><small>SAAS PERSONAL</small></span></div>
+      <div className="brand-lockup"><img className="brand-logo" src="/brand/financas-bi-logo.png" alt="" /><span><strong>Finanças BI</strong><small>SAAS PERSONAL</small></span></div>
       <div className="nav-label">WORKSPACE</div>
       <nav className="side-nav" aria-label="Navegação principal">
         <button className={view === "dashboard" ? "active" : ""} onClick={() => { setView("dashboard"); setMenuOpen(false); }}><LayoutDashboard size={17} />Dashboard BI</button>
@@ -351,7 +351,7 @@ export default function FinanceDashboard({ user }: { user: AuthUser }) {
 
     <main className="main-content">
       <header className="topbar">
-        <div className="top-title-wrap"><button className="mobile-menu-button" aria-label="Abrir menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(value => !value)}>{menuOpen ? <X size={19} /> : <Menu size={19} />}</button><div><div className="breadcrumb">Visão geral <span>/</span> {view === "dashboard" ? "Dashboard BI" : view === "movements" ? "Movimentações" : "Recorrências"}</div><h1>{title}</h1></div></div>
+        <div className="top-title-wrap"><button className="mobile-menu-button" aria-label="Abrir menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(value => !value)}>{menuOpen ? <X size={19} /> : <Menu size={19} />}</button><img className="topbar-mobile-logo brand-logo" src="/brand/financas-bi-logo.png" alt="" /><div><div className="breadcrumb">Visão geral <span>/</span> {view === "dashboard" ? "Dashboard BI" : view === "movements" ? "Movimentações" : "Recorrências"}</div><h1>{title}</h1></div></div>
         <div className="top-actions"><div className="account-chip"><span className="live-dot" /><span className="account-email">{user.email}</span><ShieldCheck size={15} /></div><button className="button button-primary" onClick={openNewMovement}><Plus size={16} />Novo lançamento</button><button className="button logout-button" onClick={() => void handleLogout()} disabled={logoutMutation.isPending}><LogOut size={15} /><span>Sair</span></button></div>
       </header>
 
